@@ -4,33 +4,33 @@
 #include <iostream>
 
 #ifdef Explicacion
-void imprimirDescendente(int number)
+void ImprimirDescendente(int number)
 {
     if (number > 0)
     {
         std::cout << number << " ";
-        imprimirDescendente(number - 1);
+        ImprimirDescendente(number - 1);
     }
 }
 
 void main()
 {
-    srand(time(NULL));
+    srand(time(nullptr));
     int number = 3;
 
-    imprimirDescendente(number);
+    ImprimirDescendente(number);
     std::cout << "\n\n";
 }
 
 #else
 
-void Factorial(int number, int& value)
+void Factorial(int number, int& result)
 {
     if (number > 0)
     {
-        value *= (number);
+        result *= (number);
         std::cout << number << " ";
-        Factorial(number - 1, value);
+        Factorial(number - 1, result);
     }
 }
 
