@@ -16,29 +16,33 @@ void main()
     cout << "Step 0: ";
     for (int j = 0; j < maxNums; j++)
     {
-        cout << arr[j] << " ";	    
+        cout << arr[j] << " ";
     }
     cout << endl;
 
+
     for (int i = 0; i < maxNums - 1; i++)
     {
-        for (int j = 0; j < (maxNums - i - 1); j++)
+        int minIndex = i;
+        for (int j = i + 1; j < maxNums; j++)
         {
-            if (arr[j] > arr[j + 1])
+            if (arr[j] < arr[minIndex])
             {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                minIndex = j;
             }
+        }
+        if (minIndex != i)
+        {
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
         }
 
         cout << "Step " << i + 1 << ": ";
         for (int j = 0; j < maxNums; j++)
         {
-            cout << arr[j] << " ";	        
+            cout << arr[j] << " ";
         }
-
         cout << endl;
     }
-    cout << endl;
 }

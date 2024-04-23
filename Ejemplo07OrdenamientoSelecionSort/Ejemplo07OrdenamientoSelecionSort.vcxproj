@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5b0cf01f-1d42-4a9d-bf85-5f144ef1f9a9}</ProjectGuid>
-    <RootNamespace>Ejemplo04SeparacionDeArchivos</RootNamespace>
+    <ProjectGuid>{6e2fcdee-617a-45dd-a90e-036da77ba713}</ProjectGuid>
+    <RootNamespace>Ejemplo07OrdenamientoSelecionSort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,18 +70,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -139,24 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Declaraciones.h" />
-    <ClInclude Include="Juego.h" />
-    <ClInclude Include="MenuConfiguracion.h" />
-    <ClInclude Include="MenuCreditos.h" />
-    <ClInclude Include="MenuManager.h" />
-    <ClInclude Include="MenuPrincipal.h" />
-    <ClInclude Include="MenuSalir.h" />
-    <ClInclude Include="Program.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Juego.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="MenuConfiguracion.cpp" />
-    <ClCompile Include="MenuCreditos.cpp" />
-    <ClCompile Include="MenuManager.cpp" />
-    <ClCompile Include="MenuPrincipal.cpp" />
-    <ClCompile Include="MenuSalir.cpp" />
-    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Ejemplo07OrdenamientoSelectionSort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
